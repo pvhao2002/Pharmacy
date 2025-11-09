@@ -1,0 +1,111 @@
+/* Nền tổng thể */
+.pharma-login-page {
+    background: linear-gradient(135deg, #EAF8FB 0%, #F9FAFB 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Lớp overlay form */
+.pharma-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px 50px;
+    width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 173, 239, 0.25);
+    border: 1px solid rgba(0, 150, 136, 0.15);
+}
+
+/* Nội dung form */
+.login-card {
+    text-align: center;
+    color: #1F2937;
+}
+
+.brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00ADEF;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #4B5563;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* Ô input */
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+    background: #FFFFFF;
+    color: #1F2937;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.input-group input::placeholder {
+    color: #9CA3AF;
+}
+
+.input-group input:focus {
+    border-color: #00ADEF;
+    box-shadow: 0 0 4px rgba(0, 173, 239, 0.3);
+}
+
+/* Nút đăng nhập */
+.login-btn {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00ADEF, #009688);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(90deg, #0090c5, #00796B);
+}
+
+/* Thông báo lỗi */
+.error {
+    color: #DC2626;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: rgba(220, 38, 38, 0.08);
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* Ghi chú */
+.note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #6B7280;
+    opacity: 0.8;
+}
