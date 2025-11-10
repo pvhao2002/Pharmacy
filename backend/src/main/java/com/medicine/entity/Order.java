@@ -2,7 +2,6 @@ package com.medicine.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.gradle.internal.impldep.com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -29,7 +28,6 @@ public class Order {
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @Builder.Default
-    @JsonManagedReference
     private Set<OrderItem> items = new HashSet<>();
 
     @Column(unique = true, nullable = false)
